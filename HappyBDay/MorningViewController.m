@@ -9,7 +9,6 @@
 #import "MorningViewController.h"
 
 @interface MorningViewController ()
-@property (weak, nonatomic) IBOutlet UIView *skyView;
 
 @end
 

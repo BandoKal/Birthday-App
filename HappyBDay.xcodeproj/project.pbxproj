@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53754E21ACBA0A4009D6CDB /* StoryScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E11ACBA0A4009D6CDB /* StoryScript.m */; };
+		E53754E51ACBA0C8009D6CDB /* NotificationScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E41ACBA0C8009D6CDB /* NotificationScheduler.m */; };
+		E53754E81ACBA55B009D6CDB /* NotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E71ACBA55B009D6CDB /* NotificationModel.m */; };
 		E5B21CF11ACB89C000BB8C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21CF01ACB89C000BB8C0D /* main.m */; };
 		E5B21CF41ACB89C000BB8C0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21CF31ACB89C000BB8C0D /* AppDelegate.m */; };
 		E5B21CF71ACB89C000BB8C0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21CF61ACB89C000BB8C0D /* ViewController.m */; };
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E53754E01ACBA0A4009D6CDB /* StoryScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryScript.h; sourceTree = "<group>"; };
+		E53754E11ACBA0A4009D6CDB /* StoryScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryScript.m; sourceTree = "<group>"; };
+		E53754E31ACBA0C8009D6CDB /* NotificationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScheduler.h; sourceTree = "<group>"; };
+		E53754E41ACBA0C8009D6CDB /* NotificationScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScheduler.m; sourceTree = "<group>"; };
+		E53754E61ACBA55B009D6CDB /* NotificationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationModel.h; sourceTree = "<group>"; };
+		E53754E71ACBA55B009D6CDB /* NotificationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationModel.m; sourceTree = "<group>"; };
 		E5B21CEB1ACB89C000BB8C0D /* HappyBDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B21CEF1ACB89C000BB8C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B21CF01ACB89C000BB8C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +72,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E53754DF1ACBA079009D6CDB /* BackEnd */ = {
+			isa = PBXGroup;
+			children = (
+				E53754E01ACBA0A4009D6CDB /* StoryScript.h */,
+				E53754E11ACBA0A4009D6CDB /* StoryScript.m */,
+				E53754E31ACBA0C8009D6CDB /* NotificationScheduler.h */,
+				E53754E41ACBA0C8009D6CDB /* NotificationScheduler.m */,
+				E53754E61ACBA55B009D6CDB /* NotificationModel.h */,
+				E53754E71ACBA55B009D6CDB /* NotificationModel.m */,
+			);
+			name = BackEnd;
+			sourceTree = "<group>";
+		};
 		E5B21CE21ACB89C000BB8C0D = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +106,7 @@
 		E5B21CED1ACB89C000BB8C0D /* HappyBDay */ = {
 			isa = PBXGroup;
 			children = (
+				E53754DF1ACBA079009D6CDB /* BackEnd */,
 				E5B21CF21ACB89C000BB8C0D /* AppDelegate.h */,
 				E5B21CF31ACB89C000BB8C0D /* AppDelegate.m */,
 				E5B21CF51ACB89C000BB8C0D /* ViewController.h */,
@@ -224,9 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53754E51ACBA0C8009D6CDB /* NotificationScheduler.m in Sources */,
 				E5B21CF71ACB89C000BB8C0D /* ViewController.m in Sources */,
 				E5B21CF41ACB89C000BB8C0D /* AppDelegate.m in Sources */,
+				E53754E21ACBA0A4009D6CDB /* StoryScript.m in Sources */,
 				E5B21CF11ACB89C000BB8C0D /* main.m in Sources */,
+				E53754E81ACBA55B009D6CDB /* NotificationModel.m in Sources */,
 				E5B21D161ACB8C3200BB8C0D /* MorningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
