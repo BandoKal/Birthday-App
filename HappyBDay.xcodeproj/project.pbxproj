@@ -14,6 +14,7 @@
 		E5B21CFC1ACB89C000BB8C0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B21CFB1ACB89C000BB8C0D /* Images.xcassets */; };
 		E5B21CFF1ACB89C000BB8C0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B21CFD1ACB89C000BB8C0D /* LaunchScreen.xib */; };
 		E5B21D0B1ACB89C000BB8C0D /* HappyBDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21D0A1ACB89C000BB8C0D /* HappyBDayTests.m */; };
+		E5B21D161ACB8C3200BB8C0D /* MorningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21D151ACB8C3200BB8C0D /* MorningViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E5B21D041ACB89C000BB8C0D /* HappyBDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyBDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B21D091ACB89C000BB8C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B21D0A1ACB89C000BB8C0D /* HappyBDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyBDayTests.m; sourceTree = "<group>"; };
+		E5B21D141ACB8C3200BB8C0D /* MorningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorningViewController.h; sourceTree = "<group>"; };
+		E5B21D151ACB8C3200BB8C0D /* MorningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorningViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				E5B21CFB1ACB89C000BB8C0D /* Images.xcassets */,
 				E5B21CFD1ACB89C000BB8C0D /* LaunchScreen.xib */,
 				E5B21CEE1ACB89C000BB8C0D /* Supporting Files */,
+				E5B21D141ACB8C3200BB8C0D /* MorningViewController.h */,
+				E5B21D151ACB8C3200BB8C0D /* MorningViewController.m */,
 			);
 			path = HappyBDay;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				E5B21CF71ACB89C000BB8C0D /* ViewController.m in Sources */,
 				E5B21CF41ACB89C000BB8C0D /* AppDelegate.m in Sources */,
 				E5B21CF11ACB89C000BB8C0D /* main.m in Sources */,
+				E5B21D161ACB8C3200BB8C0D /* MorningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 				E5B21D101ACB89C000BB8C0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5B21D111ACB89C000BB8C0D /* Build configuration list for PBXNativeTarget "HappyBDayTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				E5B21D131ACB89C000BB8C0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
