@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GTt-1y-M3j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ivg-d6-cRB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Happy Birthday-->
@@ -71,6 +72,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXC-Ur-jGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2003" y="-338"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AAz-Xg-CAb">
+            <objects>
+                <viewController id="ivg-d6-cRB" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4aA-qv-4tN"/>
+                        <viewControllerLayoutGuide type="bottom" id="5kn-Yk-64V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7VH-lR-IkB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PG7-aX-2Xe">
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-ej-Lwu">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <state key="normal" title="I'm Done">
+                                    <color key="titleColor" red="0.95167793026496283" green="0.95452572601010099" blue="0.0048776350550347233" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userTouchedImDoneButton:" destination="ivg-d6-cRB" eventType="touchUpInside" id="BXc-h2-g3q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FIZ-ej-Lwu" firstAttribute="top" secondItem="4aA-qv-4tN" secondAttribute="bottom" constant="8" id="GR3-K5-jyA"/>
+                            <constraint firstItem="5kn-Yk-64V" firstAttribute="top" secondItem="PG7-aX-2Xe" secondAttribute="bottom" id="ICH-YK-R0l"/>
+                            <constraint firstItem="PG7-aX-2Xe" firstAttribute="leading" secondItem="7VH-lR-IkB" secondAttribute="leadingMargin" constant="-16" id="MJN-pS-Cjr"/>
+                            <constraint firstItem="PG7-aX-2Xe" firstAttribute="top" secondItem="7VH-lR-IkB" secondAttribute="topMargin" id="Oep-0c-74T"/>
+                            <constraint firstItem="PG7-aX-2Xe" firstAttribute="top" secondItem="FIZ-ej-Lwu" secondAttribute="bottom" constant="12" id="PZB-h5-IG1"/>
+                            <constraint firstItem="FIZ-ej-Lwu" firstAttribute="trailing" secondItem="7VH-lR-IkB" secondAttribute="trailingMargin" id="Zai-DF-1wP"/>
+                            <constraint firstItem="FIZ-ej-Lwu" firstAttribute="leading" secondItem="7VH-lR-IkB" secondAttribute="leadingMargin" id="j9a-MG-Kct"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PG7-aX-2Xe" secondAttribute="trailing" constant="-16" id="ncG-IS-IzW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Oep-0c-74T"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="PG7-aX-2Xe" id="eHR-Kh-6NS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXc-LG-mTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2003" y="381"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zG5-iu-O0m">

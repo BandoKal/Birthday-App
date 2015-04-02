@@ -17,9 +17,30 @@
         NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
         formatter.dateFormat = @"yyyy/MM/dd HH:mm";
         
-        _script = @[ [[NotificationModel alloc]initWithTitle:@"Good Morning"
-                                                     message:@"Do stuff."
-                                                    fireDate:[formatter dateFromString:@"2015/03/31 23:20"]]];
+        _script = @[[[NotificationModel alloc]initWithTitle:@"Good Morning"
+                                                    message:@"Open now for your B-day message."
+                                                   fireDate:[formatter dateFromString:@"2015/04/04 08:00"]
+                                           notificationType:NotificationTypeMorning],
+                    [[NotificationModel alloc]initWithTitle:@"Happy Birthday Brunch!"
+                                                    message:@"Open now for your B-day message."
+                                                   fireDate:[formatter dateFromString:@""]
+                                           notificationType:NotificationTypeMidMorning],
+                    [[NotificationModel alloc]initWithTitle:@"The Sun is Sky High!"
+                                                    message:@"Open now for your B-day message."
+                                                   fireDate:[formatter dateFromString:@""]
+                                           notificationType:NotificationTypeNoon],
+                    [[NotificationModel alloc]initWithTitle:@"What do you think?"
+                                                    message:@""
+                                                   fireDate:[formatter dateFromString:@""]
+                                           notificationType:NotificationTypeEarlyAfternoon],
+                    [[NotificationModel alloc]initWithTitle:@""
+                                                    message:@""
+                                                   fireDate:[formatter dateFromString:@""]
+                                           notificationType:NotificationTypePreDinner],
+                    [[NotificationModel alloc]initWithTitle:@""
+                                                    message:@""
+                                                   fireDate:[formatter dateFromString:@""]
+                                           notificationType:NotificationTypeEvening]];
     }
     
     return self;

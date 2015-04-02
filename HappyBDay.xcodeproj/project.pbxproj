@@ -10,6 +10,7 @@
 		E53754E21ACBA0A4009D6CDB /* StoryScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E11ACBA0A4009D6CDB /* StoryScript.m */; };
 		E53754E51ACBA0C8009D6CDB /* NotificationScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E41ACBA0C8009D6CDB /* NotificationScheduler.m */; };
 		E53754E81ACBA55B009D6CDB /* NotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E71ACBA55B009D6CDB /* NotificationModel.m */; };
+		E53754EA1ACCE61F009D6CDB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53754E91ACCE61F009D6CDB /* WebKit.framework */; };
 		E5B21CF11ACB89C000BB8C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21CF01ACB89C000BB8C0D /* main.m */; };
 		E5B21CF41ACB89C000BB8C0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21CF31ACB89C000BB8C0D /* AppDelegate.m */; };
 		E5B21CF71ACB89C000BB8C0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B21CF61ACB89C000BB8C0D /* ViewController.m */; };
@@ -37,6 +38,7 @@
 		E53754E41ACBA0C8009D6CDB /* NotificationScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScheduler.m; sourceTree = "<group>"; };
 		E53754E61ACBA55B009D6CDB /* NotificationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationModel.h; sourceTree = "<group>"; };
 		E53754E71ACBA55B009D6CDB /* NotificationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationModel.m; sourceTree = "<group>"; };
+		E53754E91ACCE61F009D6CDB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E5B21CEB1ACB89C000BB8C0D /* HappyBDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B21CEF1ACB89C000BB8C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B21CF01ACB89C000BB8C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53754EA1ACCE61F009D6CDB /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +91,7 @@
 		E5B21CE21ACB89C000BB8C0D = {
 			isa = PBXGroup;
 			children = (
+				E53754E91ACCE61F009D6CDB /* WebKit.framework */,
 				E5B21CED1ACB89C000BB8C0D /* HappyBDay */,
 				E5B21D071ACB89C000BB8C0D /* HappyBDayTests */,
 				E5B21CEC1ACB89C000BB8C0D /* Products */,

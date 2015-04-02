@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property(nonatomic,strong)IBOutlet UIWebView *webView;
 @end
 
 @implementation ViewController
@@ -17,11 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://www.jigsawplanet.com/?rc=play&pid=2b2ee09ee10b"]];
+    [self.webView loadRequest:request];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)userTouchedImDoneButton:(id)sender {
+    //TODO: userdefaults for if app is open
+    abort();
 }
 
 @end
