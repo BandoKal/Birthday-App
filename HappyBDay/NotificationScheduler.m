@@ -8,6 +8,7 @@
 
 #import "NotificationScheduler.h"
 #import "StoryScript.h"
+#import "NotificationModel.h"
 #import <UIKit/UIKit.h>
 
 @implementation NotificationScheduler
@@ -15,11 +16,15 @@
 -(void)scheduleNotifications {
     [[UIApplication sharedApplication]registerUserNotificationSettings: [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil ]];
     StoryScript *scripter = [[StoryScript alloc]init];
-    UILocalNotification *noti = [[UILocalNotification alloc]init];
-    noti.alertTitle = [scripter.script[0] alertTitle];
-    noti.alertBody = [scripter.script[0] message];
-    noti.fireDate = [scripter.script[0] fireDate];
-    [[UIApplication sharedApplication]scheduleLocalNotification:noti];
+    for (NotificationModel *model in scripter.script) {
+        UILocalNotification *noti = [[UILocalNotification alloc]init];
+        noti.alertTitle = [model alertTitle];
+        noti.alertBody = [model message];
+        noti.fireDate = [model fireDate];
+        noti.userInfo = @{@"notificationType":@([model notificationType])};
+        [[UIApplication sharedApplication]scheduleLocalNotification:noti];
+    }
+    
 }
 
 @end

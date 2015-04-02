@@ -26,15 +26,15 @@
                                                    fireDate:[formatter dateFromString:@""]
                                            notificationType:NotificationTypeMidMorning],
                     [[NotificationModel alloc]initWithTitle:@"The Sun is Sky High!"
-                                                    message:@"Open now for your B-day message."
+                                                    message:@"Psst... open for you B-day message."
                                                    fireDate:[formatter dateFromString:@""]
                                            notificationType:NotificationTypeNoon],
-                    [[NotificationModel alloc]initWithTitle:@"What do you think?"
-                                                    message:@""
+                    [[NotificationModel alloc]initWithTitle:@"Are you ready for dinner?"
+                                                    message:@"Still pretty early perhaps a puzzle?"
                                                    fireDate:[formatter dateFromString:@""]
                                            notificationType:NotificationTypeEarlyAfternoon],
-                    [[NotificationModel alloc]initWithTitle:@""
-                                                    message:@""
+                    [[NotificationModel alloc]initWithTitle:@"Are you ready yet????"
+                                                    message:@"You are beatiful before you even start."
                                                    fireDate:[formatter dateFromString:@""]
                                            notificationType:NotificationTypePreDinner],
                     [[NotificationModel alloc]initWithTitle:@""

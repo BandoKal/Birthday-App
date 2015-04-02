@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ivg-d6-cRB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GTt-1y-M3j">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -10,25 +10,67 @@
             <objects>
                 <tableViewController id="Tkt-2R-Ffa" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="0nL-xY-Sm5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="r5W-kA-a4k">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MorningCell" rowHeight="90" id="r5W-kA-a4k">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r5W-kA-a4k" id="304-R7-KuX">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3F-t7-rtr">
-                                            <rect key="frame" x="8" y="8" width="42" height="74"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wsg-sunrise-header" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-BM-aFv">
+                                            <rect key="frame" x="0.0" y="1" width="375" height="87"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xVn-BM-aFv" secondAttribute="bottom" constant="-7" id="BIl-Lr-brk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xVn-BM-aFv" secondAttribute="trailing" constant="-8" id="VYv-Fy-Vzj"/>
+                                        <constraint firstItem="xVn-BM-aFv" firstAttribute="leading" secondItem="304-R7-KuX" secondAttribute="leadingMargin" constant="-8" id="b0G-Xo-Qt7"/>
+                                        <constraint firstItem="xVn-BM-aFv" firstAttribute="top" secondItem="304-R7-KuX" secondAttribute="topMargin" constant="-7" id="whK-ww-BHN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MidMorningCell" id="mpT-Wq-by8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mpT-Wq-by8" id="3vJ-k2-B4X">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wsg-sunrise-header" translatesAutoresizingMaskIntoConstraints="NO" id="fHc-GJ-nWr">
+                                            <rect key="frame" x="0.0" y="1" width="375" height="87"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fHc-GJ-nWr" secondAttribute="bottom" constant="-7" id="Eal-Og-8oP"/>
+                                        <constraint firstItem="fHc-GJ-nWr" firstAttribute="top" secondItem="3vJ-k2-B4X" secondAttribute="topMargin" constant="-7" id="UlP-w7-aNe"/>
+                                        <constraint firstItem="fHc-GJ-nWr" firstAttribute="leading" secondItem="3vJ-k2-B4X" secondAttribute="leadingMargin" constant="-8" id="VIH-go-WdU"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fHc-GJ-nWr" secondAttribute="trailing" constant="-8" id="iQ2-nd-kpg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotReadyCell" id="rbW-CN-5cY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rbW-CN-5cY" id="QWY-Zg-Qkw">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your not quite ready to see this app yet." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGD-QE-sz0">
+                                            <rect key="frame" x="8" y="35" width="359" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jGD-QE-sz0" firstAttribute="trailing" secondItem="QWY-Zg-Qkw" secondAttribute="trailingMargin" id="B9h-pD-fYK"/>
+                                        <constraint firstAttribute="centerY" secondItem="jGD-QE-sz0" secondAttribute="centerY" id="K08-y2-wMX"/>
+                                        <constraint firstItem="jGD-QE-sz0" firstAttribute="leading" secondItem="QWY-Zg-Qkw" secondAttribute="leadingMargin" id="qoE-mp-any"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="Tkt-2R-Ffa" id="ACI-i0-Q4O"/>
                             <outlet property="delegate" destination="Tkt-2R-Ffa" id="Fm2-p3-9fW"/>
@@ -37,11 +79,12 @@
                     <navigationItem key="navigationItem" title="Happy Birthday" id="n5Q-ip-ksk"/>
                     <connections>
                         <segue destination="GTt-1y-M3j" kind="show" id="C2y-K6-GGi"/>
+                        <segue destination="ivg-d6-cRB" kind="show" id="8Vh-ym-zkJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5SI-e0-HcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="335"/>
+            <point key="canvasLocation" x="1134.5" y="331.5"/>
         </scene>
         <!--Morning View Controller-->
         <scene sceneID="ouQ-Nm-TsY">
@@ -52,45 +95,66 @@
                         <viewControllerLayoutGuide type="bottom" id="Qxj-yf-QhM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jOE-BU-XXS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wsg-sunrise-header" translatesAutoresizingMaskIntoConstraints="NO" id="mMh-8y-Fpv">
-                                <rect key="frame" x="0.0" y="64" width="600" height="98"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wsg-sunrise-header" translatesAutoresizingMaskIntoConstraints="NO" id="mMh-8y-Fpv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3r1-8x-sOl"/>
+                                    <constraint firstAttribute="width" constant="375" id="YYc-Yg-h6N"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLT-qJ-yYF">
-                                <rect key="frame" x="16" y="170" width="568" height="410"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tLT-qJ-yYF">
+                                <rect key="frame" x="16" y="152" width="343" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="RCI-qr-qCU"/>
+                                </constraints>
+                                <mutableString key="text">  Today is the greatest day of my life!!!     Because I woke up with you.  Joy that only comes from love fills my heart...     Because I woke up with you. I fill as full a bluberry bursting brightly with love...    Because I woke up with you. I hope your birthday will be great! Mine was...     Because I woke up with you.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thisguy" translatesAutoresizingMaskIntoConstraints="NO" id="XFU-iS-I0C">
+                                <rect key="frame" x="16" y="360" width="343" height="299"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XFU-iS-I0C" firstAttribute="leading" secondItem="jOE-BU-XXS" secondAttribute="leadingMargin" id="0Mp-ab-Gr8"/>
+                            <constraint firstItem="tLT-qJ-yYF" firstAttribute="top" secondItem="mMh-8y-Fpv" secondAttribute="bottom" constant="8" id="Ggy-ae-H5Y"/>
+                            <constraint firstItem="tLT-qJ-yYF" firstAttribute="leading" secondItem="jOE-BU-XXS" secondAttribute="leadingMargin" id="HlO-lA-jBA"/>
+                            <constraint firstItem="tLT-qJ-yYF" firstAttribute="trailing" secondItem="jOE-BU-XXS" secondAttribute="trailingMargin" id="NgC-TS-ZTM"/>
+                            <constraint firstItem="XFU-iS-I0C" firstAttribute="trailing" secondItem="jOE-BU-XXS" secondAttribute="trailingMargin" id="S1u-Av-p1N"/>
+                            <constraint firstItem="mMh-8y-Fpv" firstAttribute="leading" secondItem="jOE-BU-XXS" secondAttribute="leadingMargin" constant="-16" id="hHw-Py-rRN"/>
+                            <constraint firstItem="mMh-8y-Fpv" firstAttribute="top" secondItem="19e-t4-6Ts" secondAttribute="bottom" id="qdN-uo-gbs"/>
+                            <constraint firstItem="Qxj-yf-QhM" firstAttribute="top" secondItem="XFU-iS-I0C" secondAttribute="bottom" constant="8" id="xPl-il-mbk"/>
+                            <constraint firstItem="XFU-iS-I0C" firstAttribute="top" secondItem="tLT-qJ-yYF" secondAttribute="bottom" constant="8" id="zk6-FM-gmo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXC-Ur-jGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2003" y="-338"/>
+            <point key="canvasLocation" x="2002.5" y="-338.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Early Afternoon-->
         <scene sceneID="AAz-Xg-CAb">
             <objects>
-                <viewController id="ivg-d6-cRB" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Early Afternoon" id="ivg-d6-cRB" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4aA-qv-4tN"/>
                         <viewControllerLayoutGuide type="bottom" id="5kn-Yk-64V"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7VH-lR-IkB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PG7-aX-2Xe">
-                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-ej-Lwu">
-                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
                                 <state key="normal" title="I'm Done">
                                     <color key="titleColor" red="0.95167793026496283" green="0.95452572601010099" blue="0.0048776350550347233" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,6 +195,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f7J-CZ-qmR" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="upF-Dr-DiA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -146,6 +211,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="thisguy" width="612" height="612"/>
         <image name="wsg-sunrise-header" width="940" height="198"/>
     </resources>
 </document>
