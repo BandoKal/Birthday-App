@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52FE6C81ACE271300654A5D /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52FE6C71ACE271300654A5D /* PageViewController.m */; };
+		E52FE6CB1ACE276F00654A5D /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52FE6CA1ACE276F00654A5D /* ChildViewController.m */; };
+		E52FE6CE1ACF41EF00654A5D /* MidMorningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52FE6CD1ACF41EF00654A5D /* MidMorningViewController.m */; };
 		E53754E21ACBA0A4009D6CDB /* StoryScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E11ACBA0A4009D6CDB /* StoryScript.m */; };
 		E53754E51ACBA0C8009D6CDB /* NotificationScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E41ACBA0C8009D6CDB /* NotificationScheduler.m */; };
 		E53754E81ACBA55B009D6CDB /* NotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E53754E71ACBA55B009D6CDB /* NotificationModel.m */; };
@@ -32,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E52FE6C61ACE271300654A5D /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		E52FE6C71ACE271300654A5D /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		E52FE6C91ACE276F00654A5D /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		E52FE6CA1ACE276F00654A5D /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		E52FE6CC1ACF41EF00654A5D /* MidMorningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidMorningViewController.h; sourceTree = "<group>"; };
+		E52FE6CD1ACF41EF00654A5D /* MidMorningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidMorningViewController.m; sourceTree = "<group>"; };
 		E53754E01ACBA0A4009D6CDB /* StoryScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryScript.h; sourceTree = "<group>"; };
 		E53754E11ACBA0A4009D6CDB /* StoryScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryScript.m; sourceTree = "<group>"; };
 		E53754E31ACBA0C8009D6CDB /* NotificationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScheduler.h; sourceTree = "<group>"; };
@@ -121,6 +130,12 @@
 				E5B21CEE1ACB89C000BB8C0D /* Supporting Files */,
 				E5B21D141ACB8C3200BB8C0D /* MorningViewController.h */,
 				E5B21D151ACB8C3200BB8C0D /* MorningViewController.m */,
+				E52FE6C61ACE271300654A5D /* PageViewController.h */,
+				E52FE6C71ACE271300654A5D /* PageViewController.m */,
+				E52FE6C91ACE276F00654A5D /* ChildViewController.h */,
+				E52FE6CA1ACE276F00654A5D /* ChildViewController.m */,
+				E52FE6CC1ACF41EF00654A5D /* MidMorningViewController.h */,
+				E52FE6CD1ACF41EF00654A5D /* MidMorningViewController.m */,
 			);
 			path = HappyBDay;
 			sourceTree = "<group>";
@@ -253,8 +268,11 @@
 			files = (
 				E53754E51ACBA0C8009D6CDB /* NotificationScheduler.m in Sources */,
 				E5B21CF71ACB89C000BB8C0D /* ViewController.m in Sources */,
+				E52FE6CB1ACE276F00654A5D /* ChildViewController.m in Sources */,
 				E5B21CF41ACB89C000BB8C0D /* AppDelegate.m in Sources */,
+				E52FE6C81ACE271300654A5D /* PageViewController.m in Sources */,
 				E53754E21ACBA0A4009D6CDB /* StoryScript.m in Sources */,
+				E52FE6CE1ACF41EF00654A5D /* MidMorningViewController.m in Sources */,
 				E5B21CF11ACB89C000BB8C0D /* main.m in Sources */,
 				E53754E81ACBA55B009D6CDB /* NotificationModel.m in Sources */,
 				E5B21D161ACB8C3200BB8C0D /* MorningViewController.m in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GTt-1y-M3j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qeN-ej-zdg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -58,7 +58,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your not quite ready to see this app yet." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGD-QE-sz0">
                                             <rect key="frame" x="8" y="35" width="359" height="20"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -79,12 +79,15 @@
                     <navigationItem key="navigationItem" title="Happy Birthday" id="n5Q-ip-ksk"/>
                     <connections>
                         <segue destination="GTt-1y-M3j" kind="show" id="C2y-K6-GGi"/>
-                        <segue destination="ivg-d6-cRB" kind="show" id="8Vh-ym-zkJ"/>
+                        <segue destination="VUL-Yi-3ZP" kind="show" id="mjJ-4B-gOe"/>
+                        <segue destination="ivg-d6-cRB" kind="show" id="SHE-h3-Mr4"/>
+                        <segue destination="d8P-RP-oyi" kind="show" id="SX4-pn-wFV"/>
+                        <segue destination="qeN-ej-zdg" kind="show" id="J3K-Po-hhM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5SI-e0-HcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134.5" y="331.5"/>
+            <point key="canvasLocation" x="1207.5" y="295.5"/>
         </scene>
         <!--Morning View Controller-->
         <scene sceneID="ouQ-Nm-TsY">
@@ -111,7 +114,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="RCI-qr-qCU"/>
                                 </constraints>
-                                <mutableString key="text">  Today is the greatest day of my life!!!     Because I woke up with you.  Joy that only comes from love fills my heart...     Because I woke up with you. I fill as full a bluberry bursting brightly with love...    Because I woke up with you. I hope your birthday will be great! Mine was...     Because I woke up with you.</mutableString>
+                                <string key="text">  Today is the greatest day of my life!!!     Because I woke up with you.  Joy that only comes from love fills my heart...     Because I woke up with you. I fill as full a bluberry bursting brightly with love...    Because I woke up with you. I hope your birthday will be great! Mine was...     Because I woke up with you.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -136,6 +139,115 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXC-Ur-jGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2002.5" y="-338.5"/>
+        </scene>
+        <!--Mid Morning-->
+        <scene sceneID="RlH-Im-eTx">
+            <objects>
+                <viewController title="Mid Morning" id="qeN-ej-zdg" customClass="MidMorningViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tSb-hG-OR7"/>
+                        <viewControllerLayoutGuide type="bottom" id="fpB-vh-RNd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rIt-q2-5jO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ud-xF-8qN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.5" y="432.5"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="TR1-uZ-EPY">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vwk-nv-tXY" customClass="PageViewController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnP-s5-h7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2471.5" y="432.5"/>
+        </scene>
+        <!--Child View Controller-->
+        <scene sceneID="HTm-1A-JYf">
+            <objects>
+                <viewController storyboardIdentifier="ChildViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J6U-Rs-Fle" customClass="ChildViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ysi-pC-kpP"/>
+                        <viewControllerLayoutGuide type="bottom" id="SG2-gM-9sI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="daI-CZ-gxh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KYS-Tj-1o0">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="647" id="unE-t1-1xv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="unE-t1-1xv"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiV-Jz-aYL">
+                                <rect key="frame" x="32" y="557" width="310" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gqd-5z-nx4"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Sometimes when you leave for the day we just don't know what to do with ourselves.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95167793030000003" green="0.95452572599999996" blue="0.0048776350550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SG2-gM-9sI" firstAttribute="top" secondItem="ZiV-Jz-aYL" secondAttribute="bottom" constant="30" id="5n4-vf-O2T"/>
+                            <constraint firstItem="ZiV-Jz-aYL" firstAttribute="leading" secondItem="daI-CZ-gxh" secondAttribute="leadingMargin" constant="16" id="CEL-ca-61a"/>
+                            <constraint firstItem="KYS-Tj-1o0" firstAttribute="leading" secondItem="daI-CZ-gxh" secondAttribute="leadingMargin" constant="-16" id="EIo-iu-I3S"/>
+                            <constraint firstItem="SG2-gM-9sI" firstAttribute="top" secondItem="KYS-Tj-1o0" secondAttribute="bottom" id="Swb-bC-3J2"/>
+                            <constraint firstAttribute="centerX" secondItem="ZiV-Jz-aYL" secondAttribute="centerX" id="VbX-zz-6DL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZiV-Jz-aYL" secondAttribute="trailing" constant="17" id="rfF-yp-WYP"/>
+                            <constraint firstItem="KYS-Tj-1o0" firstAttribute="top" secondItem="Ysi-pC-kpP" secondAttribute="bottom" constant="20" id="s2A-Y6-klp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KYS-Tj-1o0" secondAttribute="trailing" constant="-16" id="xSl-MF-3Yy"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="KYS-Tj-1o0" id="or6-m3-wVn"/>
+                        <outlet property="messageLabel" destination="ZiV-Jz-aYL" id="6cZ-UU-G60"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6C-Ny-8bv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2805.5" y="417.5"/>
+        </scene>
+        <!--Noon-->
+        <scene sceneID="bMs-2o-Ecb">
+            <objects>
+                <viewController title="Noon" id="VUL-Yi-3ZP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99R-98-ERe"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivl-vY-XTj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9LM-rp-5aA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hZ-lK-oyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.5" y="1190.5"/>
         </scene>
         <!--Early Afternoon-->
         <scene sceneID="AAz-Xg-CAb">
@@ -188,7 +300,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXc-LG-mTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2003" y="381"/>
+            <point key="canvasLocation" x="2002.5" y="1925.5"/>
+        </scene>
+        <!--Pre Dinner-->
+        <scene sceneID="oxx-NA-Jgq">
+            <objects>
+                <viewController title="Pre Dinner" id="d8P-RP-oyi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mrD-JA-mrG"/>
+                        <viewControllerLayoutGuide type="bottom" id="f0W-K6-pEl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IAn-2x-0ZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5M-df-DRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.5" y="2631.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zG5-iu-O0m">

@@ -22,8 +22,8 @@
                                                    fireDate:[formatter dateFromString:@"2015/04/04 08:00"]
                                            notificationType:NotificationTypeMorning],
                     [[NotificationModel alloc]initWithTitle:@"Happy Birthday Brunch!"
-                                                    message:@"Open now for your B-day message."
-                                                   fireDate:[formatter dateFromString:@""]
+                                                    message:@"Open now for your B-day message from Lucy."
+                                                   fireDate:[formatter dateFromString:@"2015/04/04 10:00"]
                                            notificationType:NotificationTypeMidMorning],
                     [[NotificationModel alloc]initWithTitle:@"The Sun is Sky High!"
                                                     message:@"Psst... open for you B-day message."
